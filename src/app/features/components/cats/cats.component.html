@@ -1,0 +1,17 @@
+<div class="toolbar">
+  <app-search (searchEmitter)="search($event)"></app-search>
+  <mat-paginator #paginator [length]="currentCatsLength"
+                 [pageSize]="6"
+                 [pageSizeOptions]="[3, 6, 9, 18]"
+                 (page)="pageEvent = $event">
+  </mat-paginator>
+</div>
+
+<div class="cats-cards">
+  <ng-container *ngFor="let cat of cats | search:searchValue
+  |slice:((paginator.pageIndex)*paginator.pageSize):
+  ((paginator.pageIndex+1)*paginator.pageSize)">
+    <app-cat [cat]="cat"></app-cat>
+  </ng-container>
+</div>
+

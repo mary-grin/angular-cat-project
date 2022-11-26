@@ -1,0 +1,6 @@
+<form class="example-form" [formGroup]="formSearch" (input)="searchEmitter.emit(formSearch.value)">
+  <mat-form-field class="example-full-width">
+    <mat-label>Breed</mat-label>
+    <input matInput type="text" formControlName="search">
+  </mat-form-field>
+</form>

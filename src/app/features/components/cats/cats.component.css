@@ -1,0 +1,13 @@
+.cats-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  row-gap: 50px;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}

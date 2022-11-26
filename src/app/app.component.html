@@ -1,0 +1,9 @@
+<div>
+  <app-header></app-header>
+  <div class="container">
+    <app-cats *ngIf="cats.length" [cats]="cats"></app-cats>
+  </div>
+</div>
+
+<mat-progress-spinner mode="indeterminate" *ngIf="!cats.length"></mat-progress-spinner>
+

@@ -1,0 +1,5 @@
+<mat-card class="cat-card">
+  <mat-card-title>{{cat.name}}</mat-card-title>
+  <mat-card-content>{{cat.description.substring(0, 100)}}...</mat-card-content>
+  <img mat-card-image [src]="cat.url" [alt]="cat.name">
+</mat-card>
