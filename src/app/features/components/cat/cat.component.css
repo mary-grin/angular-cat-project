@@ -14,3 +14,12 @@ img {
   color: #f7f3ff;
   transition: .5s;
 }
+
+@media (max-width: 500px) {
+  .cat-card {
+    width: 300px;
+  }
+  .img {
+    height: 200px;
+  }
+}

@@ -1,7 +1,8 @@
 .cats-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
   box-sizing: border-box;
   row-gap: 50px;
@@ -10,4 +11,14 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+  .toolbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  :host ::ng-deep.mat-paginator .mat-paginator-container{
+    justify-content: center;
+  }
 }

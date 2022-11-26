@@ -10,3 +10,9 @@ app-cats {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px 30px;
+  }
+}
