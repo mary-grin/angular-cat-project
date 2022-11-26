@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "homepage": "https://hryn.mariia.github.io/angular-cat-project",
+  "homepage": "https://mary-grin.github.io/angular-cat-project",
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.0.0",
